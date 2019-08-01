@@ -1,13 +1,13 @@
 # IBM Cloud PaaS API Key:
-variable ibm_bx_api_key {}
+variable "ibm_bx_api_key" {}
 
 # IBM Cloud IaaS User (aka SoftLayer Username)
-variable ibm_sl_username {}
+variable "ibm_sl_username" {}
 
 # IBM Cloud IaaS User API key (aka SoftLayer User Api Key)
-variable ibm_sl_api_key {}
+variable "ibm_sl_api_key" {}
 
-variable datacenter {
+variable "datacenter" {
   type = "map"
 
   default = {
@@ -20,11 +20,11 @@ variable datacenter {
   }
 }
 
-variable node_count {
+variable "node_count" {
   default = "1"
 }
 
-variable os {
+variable "os" {
   type = "map"
 
   default = {
@@ -34,7 +34,7 @@ variable os {
   }
 }
 
-variable vm_flavor {
+variable "vm_flavor" {
   type = "map"
 
   default = {
@@ -45,6 +45,6 @@ variable vm_flavor {
   }
 }
 
-variable domainname {
-  default = "example.com"
+variable "domainname: {
+  default = "cdetesting.com"
 }
