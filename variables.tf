@@ -1,6 +1,16 @@
-variable "ibmcloud_api_key" {}
-variable "softlayer_username" {}
-variable "softlayer_api_key" {}
+variable "ibmcloud_api_key" {
+  type = "string"
+  default = ""
+}
+variable "softlayer_username" {
+  type = "string"
+  default = ""
+}
+
+variable "softlayer_api_key" {
+  type = "string"
+  default = ""
+}
 
 variable "datacenter" {
   type = "map"
